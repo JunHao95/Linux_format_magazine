@@ -1,0 +1,61 @@
+#Hotpicks for open source software
+
+1. Vector Image Editor 
+Inkscape
+https://inkscape.org
+
+2. Dropbox client
+--> altertive dropbox client in PyQT5, provide a platform and file system no longer directly supported by dropbox
+however, it does not support collaborative and team functionality and so best used for personal purposes
+Maestrial
+https://github.com/SamSchott/maestral
+
+python3 -m pip install --upgrade maestral[gui]
+
+
+3.Desktop Environment
+Cinnamon : https://cinnamon.linuxmint.com
+it is a prominent GTK-based desktop and application set that was forked from early Gnome Shell code
+
+4. GIF Encoder
+Gifski: https://github.com/ImageOptim/gifski
+
+Small utility for converting still frames and videos to animated GIFs. This tool is based on Pngquant, lossy PNG encoder, which Gifski uses while processing individual frames. 
+Need to set up Cargo in order to use it...
+
+Using Cargo command
+cargo install gifski
+
+Disassemble video into a sequence of frames using ffmpdg.
+
+ffmpeg -i video.webm frame%04d.png
+
+gifski -o anim.gif frame*.png
+
+
+5. Youtube client
+FreeTube : https://freetubeapp.io
+
+Full fledge standalone application that provides a state-of-the-art youtube experience while being completely private.
+
+
+6.Image Optimizer 
+YOGO : https://yoga.flozz.org  , (yummy Optimizer for Gorgeous Assets)
+This software enables batch image processing
+
+There are various standalone optimisers for PNG (Zopfli) and JPEG(Guetzli) that produce good results but require manual installtions. 
+
+CLI application, find at github.com/wanadev/yoga
+
+sudo pip3 install yoga-image-optimizer 
+--> drag and drop images over the YOGA window
+
+7. CPU info Tools
+
+Cpufetch : github.com/Dr-Noob/cpufetch
+
+A tiny utility that provides information such as system information tool, nubmer of cores, frequency of CPU, list of supported instructions and exact CPU generation. 
+
+For peak performances, Cpufetch relies on Peakperf micro benchmark thats created by same author ( https://github.com/Dr-Noob/peakperf)
+
+
